@@ -33,7 +33,7 @@ int main(int argc, char * argv[]) {
 			xn = x1(history[i], a);
 			history = realloc(history, ( i + 3 ) * sizeof(long double));
 			history[i + 1] = x1(history[i], a);
-			printf("%3d %25.20Lf %35.20Lf x 10^10\n", i, history[i], history[i]*10000000000);
+			printf("%3d %20.15Lf\n", i, history[i]);
 		}
 	}
 }

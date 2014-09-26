@@ -30,7 +30,7 @@ public class chaos {
 			for (int i = 0; i < iters; i++) {
 				xn = x1(history.get(i), a);
 				history.add(xn);
-				System.out.printf("%3d %25.20f %35.20f x 10^10\n", i, history.get(i), history.get(i)*10000000000L);
+				System.out.printf("%3d %20.15f\n", i, history.get(i));
 			}
 		}
 	}

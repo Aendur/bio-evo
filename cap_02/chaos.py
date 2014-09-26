@@ -20,7 +20,7 @@ if len(sys.argv) < 4:
 
 else:
 	x0 = float(sys.argv[1])
-	a = float(sys.argv[1])
+	a = float(sys.argv[2])
 	iters = int(sys.argv[3])
 	
 	history = [x0]
@@ -28,5 +28,5 @@ else:
 	for i in range(iters):
 		xn = x1(history[i], a)
 		history.append(x1(history[i], a))
-		print("%3d %25.20f %35.20f x 10^10" % (i, history[i], history[i]*10000000000))
+		print("%3d %20.15f" % (i, history[i]))
 	
